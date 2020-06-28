@@ -81,20 +81,32 @@ nav a {
 .adress-item {
   display: inline-flex;
   justify-content: center;
-}
-.icon-mail {
-  width: 18px;
-  height: 12px;
-  justify-content: center;
+  align-content: center;
 }
 .adress-item:not(:last-child) {
   margin-right: 15px;
 }
-.number-site-container {
-  margin-left: 10px;
-}
 .number-site {
   color: #757575;
+  display: flex;
+  align-items: center;
+}
+.number-site:hover{
+  color: #2196f3;
+}
+.icon-letter{
+  fill:#757575;
+  width: 16px;
+  height: 11.2px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-smartfone{
+  width: 10px;
+  height: 15px;
+  fill: currentColor;
+  margin-right: 10px;
+
 }
 .banner-container {
   width: 100%;
@@ -158,27 +170,7 @@ nav a {
 .advantages-item {
   width: 270px;
 }
-.advantages-item::before {
-  content: "";
-  height: 120px;
-  display: block;
-  background-color: #f5f4fa;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-.icon-antena::before {
-  background-image: url(../images/antenna_1.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/clock_1.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram_1.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut_1.svg);
-}
+
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -192,6 +184,20 @@ nav a {
   color: #212121;
   margin-bottom: 10px;
 }
+.icon-container{
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.icon-advantages{
+  width: 70px;
+  height: 70px;
+  margin: 25px 0;
+}
+
 .advantages-item p {
   font-family: "roboto";
   font-style: normal;
@@ -260,13 +266,32 @@ nav a {
   display: flex;
   margin: auto;
   margin-bottom: 25px;
+  background-color: #ffffff;
 }
-.team-social-network-item:not(:last-child) {
+.team-social-network-item{
   margin-right: 10px;
-  padding: 0 12px 0 12px;
 }
-.last-item {
-  padding: 0 12px 0 12px;
+.social-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social-link:hover{
+  background-color: var(--title-mailing);
+}
+.social-icon{
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+  
+}
+.social-icon:hover{
+  fill: #ffffff;
+
 }
 .photo-item {
   margin-bottom: 30px;
@@ -308,6 +333,24 @@ nav a {
   width: 1170px;
   margin: auto;
 }
+.logo-1{
+  width: 44.27px;
+}
+.logo-2{
+  width: 40px;
+}
+.logo-3{
+  width: 41px;
+}
+.logo-4{
+  width: 79.66px;
+}
+.logo-5{
+  width: 59px;
+}
+.logo-6{
+  width: 88.48px;
+}
 .customer-item {
   width: 170px;
   height: 90px;
@@ -317,6 +360,10 @@ nav a {
   margin-bottom: 95px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.customer-item:hover{
+  border-color: var(--title-mailing);
 }
 .customer-item:not(:last-child) {
   margin-right: 30px;
@@ -384,6 +431,26 @@ footer p {
 }
 .right-line:not(:last-child) {
   margin-right: 10px;
+}
+.bottom-social-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.bottom-social-link:hover{
+  background-color: var(--title-mailing);
+
+}
+.bottom-icon{
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
 .mailing-container {
   width: 570px;
