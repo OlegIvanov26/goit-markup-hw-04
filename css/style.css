@@ -349,6 +349,9 @@ nav a {
 .logo-6{
   width: 88.48px;
 }
+.customer-svg{
+  fill: #AFB1B8;
+}
 .customer-link {
   width: 170px;
   height: 90px;
@@ -362,6 +365,10 @@ nav a {
 }
 .customer-link:hover{
   border-color: var(--title-mailing);
+}
+.customer-link:hover svg{
+  fill:var(--title-mailing) ;
+
 }
 .customer-item:not(:last-child) {
   margin-right: 30px;
